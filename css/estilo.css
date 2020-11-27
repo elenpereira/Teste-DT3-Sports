@@ -1,0 +1,101 @@
+
+body{
+	background: white;
+	font:13px "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+}
+
+#container{
+
+	width: 1080px;
+	margin: 0 auto;
+}
+
+.logo_header {
+  transform: rotate(-15deg);
+  position:relative;
+  
+  top:50%;
+  left:50%;
+  margin-left: 0px;
+  margin-bottom: 50px;
+  margin-top: 35px;
+  width: 100px;
+  height: 100px;
+  
+  /* CÓDIGO PARA CHAMAR A ANIMAÇÃO */
+  -webkit-animation: rodaroda 3s linear alternate 3;
+  -moz-animation: rodaroda 3.0s linear infinite;
+  -ms-animation: rodaroda 3.0s linear infinite;
+  -o-animation: rodaroda 3.0s linear infinite;
+  animation: rodaroda 3.0s linear infinite;
+}
+
+/* KEY FRAMES PARA FAZER OS GIROS */
+@-webkit-keyframes rodaroda {
+	0% { -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -ms-transform:rotate(0deg); -o-transform:rotate(0deg); transform:rotate(0deg); }
+	50% { -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); -ms-transform:rotate(180deg); -o-transform:rotate(180deg); transform:rotate(180deg); }
+	100% { -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -ms-transform:rotate(360deg); -o-transform:rotate(360deg); transform:rotate(360deg); }
+}
+@-moz-keyframes rodaroda {
+	0% { -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -ms-transform:rotate(0deg); -o-transform:rotate(0deg); transform:rotate(0deg); }
+	50% { -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); -ms-transform:rotate(180deg); -o-transform:rotate(180deg); transform:rotate(180deg); }
+	100% { -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -ms-transform:rotate(360deg); -o-transform:rotate(360deg); transform:rotate(360deg); }
+}
+@-ms-keyframes rodaroda {
+	0% { -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -ms-transform:rotate(0deg); -o-transform:rotate(0deg); transform:rotate(0deg); }
+	50% { -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); -ms-transform:rotate(180deg); -o-transform:rotate(180deg); transform:rotate(180deg); }
+	100% { -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -ms-transform:rotate(360deg); -o-transform:rotate(360deg); transform:rotate(360deg); }
+}
+@-o-keyframes rodaroda {
+	0% { -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -ms-transform:rotate(0deg); -o-transform:rotate(0deg); transform:rotate(0deg); }
+	50% { -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); -ms-transform:rotate(180deg); -o-transform:rotate(180deg); transform:rotate(180deg); }
+	100% { -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -ms-transform:rotate(360deg); -o-transform:rotate(360deg); transform:rotate(360deg); }
+}
+@keyframes rodaroda {
+	0% { -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -ms-transform:rotate(0deg); -o-transform:rotate(0deg); transform:rotate(0deg); }
+	50% { -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); -ms-transform:rotate(180deg); -o-transform:rotate(180deg); transform:rotate(180deg); }
+	100% { -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -ms-transform:rotate(360deg); -o-transform:rotate(360deg); transform:rotate(360deg); }
+}
+
+.nav-item{
+	margin-left: 10px;	
+	margin-right: 10px;
+}
+
+.nav-item a{
+	font-size: 15px;
+	color: red;
+}
+
+.nav-item a:hover{
+	font-size: 15px;
+	background-color: red;
+}
+
+
+
+.carousel-indicators .active{
+    background-color: black;
+}
+
+.carousel-control-next{
+    opacity: 1;
+    filter: invert(1);
+}
+
+.carousel-control-prev{
+    opacity: 1;
+    filter: invert(1);
+}
+
+
+
+footer p a{
+	margin: 15px 25px;
+	color: red;
+	text-underline-position: none;
+}
+
+footer p{
+	text-align: center;
+}
